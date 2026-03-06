@@ -1,0 +1,12 @@
+{
+  "name": "tokyo_olympics_pipeline",
+  "description": "Sample Azure Data Factory pipeline structure for ingesting Olympic data",
+  "activities": [
+    {
+      "name": "CopyDataFromGitHub",
+      "type": "CopyActivity",
+      "source": "GitHub CSV",
+      "sink": "Azure Data Lake Storage"
+    }
+  ]
+}
